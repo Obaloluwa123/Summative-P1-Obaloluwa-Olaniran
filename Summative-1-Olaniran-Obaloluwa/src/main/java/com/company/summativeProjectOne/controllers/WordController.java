@@ -3,10 +3,7 @@ package com.company.summativeProjectOne.controllers;
 import com.company.summativeProjectOne.models.Definition;
 import com.company.summativeProjectOne.models.Quote;
 import org.springframework.http.HttpStatus;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseStatus;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -34,7 +31,7 @@ public class WordController {
             new Definition(15, "distributed", "Running in more than one address space")
     ));
 
-    @RequestMapping(value = "/word", method = RequestMethod.GET)
+    @GetMapping(value = "/word")
     @ResponseStatus(value = HttpStatus.OK)
     public Definition getDefinition() {
 

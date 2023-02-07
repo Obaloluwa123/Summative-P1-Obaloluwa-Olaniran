@@ -2,10 +2,7 @@ package com.company.summativeProjectOne.controllers;
 
 import com.company.summativeProjectOne.models.Quote;
 import org.springframework.http.HttpStatus;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseStatus;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -32,7 +29,7 @@ public class QuoteController {
             new Quote(73, "Oprah Winfrey", "You become what you believe")
     ));
 
-    @RequestMapping(value = "/quote", method = RequestMethod.GET)
+    @GetMapping(value = "/quote")
     @ResponseStatus(value = HttpStatus.OK)
     public Quote getQuotes() {
 

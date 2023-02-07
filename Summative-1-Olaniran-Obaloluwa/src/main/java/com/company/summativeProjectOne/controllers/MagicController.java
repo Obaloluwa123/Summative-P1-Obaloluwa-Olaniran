@@ -28,12 +28,12 @@ public class MagicController {
             new Answer(13, "Who wrote the novel \"Pride and Prejudice\"?", "Jane Austen")
 
     ));
-    @RequestMapping(value = "/magic", method = RequestMethod.POST)
+
+    @PostMapping(value = "/magic")
     @ResponseStatus(value = HttpStatus.CREATED)
     public Answer getAnswer(@RequestBody Answer answer) {
 
         int rnd = new Random().nextInt(answerList.size());
         return answerList.get(rnd);
-
     }
 }
