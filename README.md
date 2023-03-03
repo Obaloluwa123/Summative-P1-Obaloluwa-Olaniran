@@ -6,7 +6,7 @@
 
 ### App Walk-though
 
-![](https://im5.ezgif.com/tmp/ezgif-5-2fe70222f7.gif)
+Youtube link of the Application Walk-though: https://youtu.be/C0fW3c0I_wc
 
 ### Required Features
 
